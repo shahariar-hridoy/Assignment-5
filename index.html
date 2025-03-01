@@ -12,12 +12,20 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+        .poppins-regular {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
 </head>
 
-<body>
+<body class="poppins-regular w-11/12 mx-auto">
     <!-- navbar -->
     <section class="my-6">
-        <div class="navbar px-6 rounded-xl bg-white">
+        <div class="navbar px-6 rounded-xl bg-white shadow-md">
             <div class="flex-1">
                 <div class="flex items-center gap-2">
                     <img class="w-10" src="assets/logo.png" alt="">
@@ -30,7 +38,7 @@
                         <img src="assets/checkbox.png" alt="">
                         <h2 id="complete-task" class="text-2xl font-bold">24</h2>
                     </div>
-                    <button class="cursor-pointer">
+                    <button id="btn-theme" class="cursor-pointer">
                         <img src="assets/theme-btn.png" alt="">
                     </button>
                 </div>
@@ -53,7 +61,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-span-2 card bg-blue-400 card-sm shadow-sm p-6">
+            <div id="blogs-enter" class="col-span-2 card bg-blue-400 card-sm shadow-sm p-6 cursor-pointer">
                 <div class="flex gap-6  text-center items-center justify-center  ">
                     <img src="assets/board.png" alt="">
                     <p class="text-xl text-white font-semibold">Discover Something New Today!</p>
@@ -74,120 +82,126 @@
                 <!-- card 1 -->
                 <div class="card bg-slate-100 shadow-sm">
                     <div class="p-6">
-                        <div >
+                        <div>
                             <p class="bg-white w-fit p-2 rounded-md mb-2">ShopEase</p>
                             <p id="card-title-1" class="mb-2 text-2xl font-semibold">Fix Mobile Button Issue </p>
-                            <p class=" bg-white w-full p-4 mb-2 rounded-md">Debug using Chrome DevTools, check for overlapping elements</p>
+                            <p class=" bg-white w-full p-4 mb-2 rounded-md">Debug using Chrome DevTools, check for
+                                overlapping elements</p>
                         </div>
                         <div class="card-body">
-                          <div class="flex items-center justify-between"> 
-                            <div>
-                                <p class="text-xs">Deadline</p>
-                                <p class="text-sm">21 March 2025</p>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <p class="text-xs">Deadline</p>
+                                    <p class="text-sm">21 March 2025</p>
+                                </div>
+                                <button id="btn-1" class="btn btn-primary">Completed</button>
                             </div>
-                            <button id="btn-1" class="btn btn-primary">Completed</button>
-                          </div>
                         </div>
                     </div>
-                  </div>
+                </div>
                 <!-- card 2 -->
                 <div class="card bg-slate-100 shadow-sm">
                     <div class="p-6">
-                        <div >
+                        <div>
                             <p class="bg-white w-fit p-2 rounded-md mb-2">CloudSync</p>
                             <p id="card-title-2" class="mb-2 text-2xl font-semibold">Add Dark Mode </p>
-                            <p class=" bg-white w-full p-4 mb-2 rounded-md">Store the user's preference in localStorage, update CSS </p>
+                            <p class=" bg-white w-full p-4 mb-2 rounded-md">Store the user's preference in localStorage,
+                                update CSS </p>
                         </div>
                         <div class="card-body">
-                          <div class="flex items-center justify-between"> 
-                            <div>
-                                <p class="text-xs">Deadline</p>
-                                <p class="text-sm">23 March 2025</p>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <p class="text-xs">Deadline</p>
+                                    <p class="text-sm">23 March 2025</p>
+                                </div>
+                                <button id="btn-2" class="btn btn-primary">Completed</button>
                             </div>
-                            <button id="btn-2" class="btn btn-primary">Completed</button>
-                          </div>
                         </div>
                     </div>
-                  </div>
+                </div>
                 <!-- card 3 -->
                 <div class="card bg-slate-100 shadow-sm">
                     <div class="p-6">
-                        <div >
+                        <div>
                             <p class="bg-white w-fit p-2 rounded-md mb-2">SwiftPay</p>
-                            <p id="card-title-3" class="mb-2 text-2xl font-semibold">Optimize  Home page </p>
-                            <p class=" bg-white w-full p-4 mb-2 rounded-md">A homepage can rank for relevant non-branded keywords and help other pages</p>
+                            <p id="card-title-3" class="mb-2 text-2xl font-semibold">Optimize Home page </p>
+                            <p class=" bg-white w-full p-4 mb-2 rounded-md">A homepage can rank for relevant non-branded
+                                keywords and help other pages</p>
                         </div>
                         <div class="card-body">
-                          <div class="flex items-center justify-between"> 
-                            <div>
-                                <p class="text-xs">Deadline</p>
-                                <p class="text-sm">24 March 2025</p>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <p class="text-xs">Deadline</p>
+                                    <p class="text-sm">24 March 2025</p>
+                                </div>
+                                <button id="btn-3" class="btn btn-primary">Completed</button>
                             </div>
-                            <button id="btn-3" class="btn btn-primary">Completed</button>
-                          </div>
                         </div>
                     </div>
-                  </div>
+                </div>
                 <!-- card 4-->
                 <div class="card bg-slate-100 shadow-sm">
                     <div class="p-6">
-                        <div >
+                        <div>
                             <p class="bg-white w-fit p-2 rounded-md mb-2">Meta</p>
                             <p id="card-title-4" class="mb-2 text-2xl font-semibold">Add new emoji 🤲</p>
-                            <p class=" bg-white w-full p-4 mb-2 rounded-md">Anyone can submit a proposal for a new emoji. It's free, and details </p>
+                            <p class=" bg-white w-full p-4 mb-2 rounded-md">Anyone can submit a proposal for a new
+                                emoji. It's free, and details </p>
                         </div>
                         <div class="card-body">
-                          <div class="flex items-center justify-between"> 
-                            <div>
-                                <p class="text-xs">Deadline</p>
-                                <p class="text-sm">26 March 2025</p>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <p class="text-xs">Deadline</p>
+                                    <p class="text-sm">26 March 2025</p>
+                                </div>
+                                <button id="btn-4" class="btn btn-primary">Completed</button>
                             </div>
-                            <button id="btn-4" class="btn btn-primary">Completed</button>
-                          </div>
                         </div>
                     </div>
-                  </div>
+                </div>
                 <!-- card 5 -->
                 <div class="card bg-slate-100 shadow-sm">
                     <div class="p-6">
-                        <div >
+                        <div>
                             <p class="bg-white w-fit p-2 rounded-md mb-2">Google LLC</p>
                             <p id="card-title-5" class="mb-2 text-2xl font-semibold">Integrate OpenAI API </p>
-                            <p class=" bg-white w-full p-4 mb-2 rounded-md">We’re releasing an API for accessing new AI models developed by</p>
+                            <p class=" bg-white w-full p-4 mb-2 rounded-md">We’re releasing an API for accessing new AI
+                                models developed by</p>
                         </div>
                         <div class="card-body">
-                          <div class="flex items-center justify-between"> 
-                            <div>
-                                <p class="text-xs">Deadline</p>
-                                <p class="text-sm">24 March 2025</p>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <p class="text-xs">Deadline</p>
+                                    <p class="text-sm">24 March 2025</p>
+                                </div>
+                                <button id="btn-5" class="btn btn-primary">Completed</button>
                             </div>
-                            <button id="btn-5" class="btn btn-primary">Completed</button>
-                          </div>
                         </div>
                     </div>
-                  </div>
+                </div>
                 <!-- card 6-->
                 <div class="card bg-slate-100 shadow-sm">
                     <div class="p-6">
-                        <div >
+                        <div>
                             <p class="bg-white w-fit p-2 rounded-md mb-2">Glassdoar</p>
                             <p id="card-title-6" class="mb-2 text-2xl font-semibold">Improve Job searching </p>
-                            <p class=" bg-white w-full p-4 mb-2 rounded-md">You can improve your job search by updating your resume</p>
+                            <p class=" bg-white w-full p-4 mb-2 rounded-md">You can improve your job search by updating
+                                your resume</p>
                         </div>
                         <div class="card-body">
-                          <div class="flex items-center justify-between"> 
-                            <div>
-                                <p class="text-xs">Deadline</p>
-                                <p class="text-sm">23 March 2025</p>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <p class="text-xs">Deadline</p>
+                                    <p class="text-sm">23 March 2025</p>
+                                </div>
+                                <button id="btn-6" class="btn btn-primary">Completed</button>
                             </div>
-                            <button id="btn-6" class="btn btn-primary">Completed</button>
-                          </div>
                         </div>
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
-<!-- Activity log container -->
+        <!-- Activity log container -->
         <div class="col-span-1 bg-white p-6 ">
             <div class="flex justify-center items-center gap-4 mb-6">
                 <img src="assets/activity.png" alt="">
@@ -197,9 +211,9 @@
                 <button id="btn-history-clear" class="btn btn-primary">Clear History</button>
             </div>
             <!-- activity container -->
-             <div id="activity-container">
+            <div id="activity-container">
 
-             </div>
+            </div>
         </div>
     </section>
     <script src="script/utilities.js"></script>

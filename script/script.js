@@ -1,5 +1,5 @@
 const date = new Date();
-const formattedDate = date.toLocaleDateString('en-us', { month: 'short', day: '2-digit', year: 'numeric' });
+const formattedDate = date.toLocaleDateString('en-us', {weekday:'short', month: 'short', day: '2-digit', year: 'numeric' });
 document.getElementById('new-date').innerHTML = formattedDate;
 
 document.getElementById('btn-1').addEventListener('click', function (event) {
@@ -22,7 +22,9 @@ document.getElementById('btn-1').addEventListener('click', function (event) {
     activityContainer.appendChild(div);
 
     alert("Board updated Successfully");
-
+    if(remainTask === 1){
+        alert("hefh")
+    }
 })
 document.getElementById('btn-2').addEventListener('click', function (event) {
     const remainTask = getInnerTextByID('remain-task');
@@ -43,6 +45,9 @@ document.getElementById('btn-2').addEventListener('click', function (event) {
     activityContainer.appendChild(div);
 
     alert("Board updated Successfully");
+    if(remainTask === 1){
+        alert("hefh")
+    }
 })
 document.getElementById('btn-3').addEventListener('click', function (event) {
     const remainTask = getInnerTextByID('remain-task');
@@ -63,6 +68,9 @@ document.getElementById('btn-3').addEventListener('click', function (event) {
     activityContainer.appendChild(div);
 
     alert("Board updated Successfully");
+    if(remainTask === 1){
+        alert("hefh")
+    }
 })
 document.getElementById('btn-4').addEventListener('click', function (event) {
     const remainTask = getInnerTextByID('remain-task');
@@ -83,6 +91,9 @@ document.getElementById('btn-4').addEventListener('click', function (event) {
     activityContainer.appendChild(div);
 
     alert("Board updated Successfully");
+    if(remainTask === 1){
+        alert("hefh")
+    }
 })
 document.getElementById('btn-5').addEventListener('click', function (event) {
     const remainTask = getInnerTextByID('remain-task');
@@ -103,6 +114,9 @@ document.getElementById('btn-5').addEventListener('click', function (event) {
     activityContainer.appendChild(div);
 
     alert("Board updated Successfully");
+    if(remainTask === 1){
+        alert("hefh")
+    }
 })
 document.getElementById('btn-6').addEventListener('click', function (event) {
     const remainTask = getInnerTextByID('remain-task');
@@ -121,15 +135,26 @@ document.getElementById('btn-6').addEventListener('click', function (event) {
     <p class= "bg-slate-100 p-4 items-center rounded-md mt-4">You have completed the task ${title} at 12:48:15 PM</p>
     `;
     activityContainer.appendChild(div);
-
     alert("Board updated Successfully");
+    if(remainTask === 1){
+        alert("hefh")
+    }
 })
-
-
-
+const remainTask = getInnerTextByID('remain-task');
+console.log(remainTask);
 
 document.getElementById('btn-history-clear').addEventListener('click', function(){
     const activityContainer = document.getElementById('activity-container');
     activityContainer.innerText =''
     activityContainer.appendChild(div);
 })
+
+
+// blog 
+
+document.getElementById('blogs-enter').addEventListener('click', function(){
+    window.location.href = 'main.html';
+})
+
+
+document.getElementById('btn-theme').addEventListener('click')
