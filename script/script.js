@@ -23,7 +23,7 @@ document.getElementById('btn-1').addEventListener('click', function (event) {
 
     alert("Board updated Successfully");
     if (remainTask === 1) {
-        alert("hefh")
+        alert("Congrates!!! You have completed all the current task")
     }
 })
 document.getElementById('btn-2').addEventListener('click', function (event) {
@@ -46,7 +46,7 @@ document.getElementById('btn-2').addEventListener('click', function (event) {
 
     alert("Board updated Successfully");
     if (remainTask === 1) {
-        alert("hefh")
+        alert("Congrates!!! You have completed all the current task")
     }
 })
 document.getElementById('btn-3').addEventListener('click', function (event) {
@@ -69,7 +69,7 @@ document.getElementById('btn-3').addEventListener('click', function (event) {
 
     alert("Board updated Successfully");
     if (remainTask === 1) {
-        alert("hefh")
+        alert("Congrates!!! You have completed all the current task")
     }
 })
 document.getElementById('btn-4').addEventListener('click', function (event) {
@@ -92,7 +92,7 @@ document.getElementById('btn-4').addEventListener('click', function (event) {
 
     alert("Board updated Successfully");
     if (remainTask === 1) {
-        alert("hefh")
+        alert("Congrates!!! You have completed all the current task")
     }
 })
 document.getElementById('btn-5').addEventListener('click', function (event) {
@@ -115,7 +115,7 @@ document.getElementById('btn-5').addEventListener('click', function (event) {
 
     alert("Board updated Successfully");
     if (remainTask === 1) {
-        alert("hefh")
+        alert("Congrates!!! You have completed all the current task")
     }
 })
 document.getElementById('btn-6').addEventListener('click', function (event) {
@@ -137,7 +137,7 @@ document.getElementById('btn-6').addEventListener('click', function (event) {
     activityContainer.appendChild(div);
     alert("Board updated Successfully");
     if (remainTask === 1) {
-        alert("hefh")
+        alert("Congrates!!! You have completed all the current task")
     }
 })
 const remainTask = getInnerTextByID('remain-task');
